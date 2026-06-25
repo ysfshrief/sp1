@@ -42,13 +42,13 @@ export function Landing() {
 
       {/* HERO */}
       <section style={{ position: "relative", overflow: "hidden" }}>
-        <div className="wrap" style={{ display: "grid", gridTemplateColumns: "1.05fr .95fr", gap: 50, alignItems: "center", padding: "70px 24px 80px" }}>
+        <div className="wrap hero-grid" style={{ display: "grid", gridTemplateColumns: "1.05fr .95fr", gap: 50, alignItems: "center", padding: "70px 24px 80px" }}>
           <div className="rise">
             <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "var(--paper)", border: "1px solid var(--line)", borderRadius: 99, padding: "7px 14px 7px 8px", marginBottom: 24, boxShadow: "var(--shadow-sm)" }}>
               <span style={{ display: "inline-flex", gap: 1 }}>{[...Array(5)].map((_, i) => <Star key={i} size={14} fill="var(--brass)" color="var(--brass)" />)}</span>
               <span style={{ fontSize: 13, fontWeight: 600, color: "var(--green)" }}>Trusted by 600+ families across the centre</span>
             </div>
-            <h1 style={{ fontSize: 62, color: "var(--green)", lineHeight: 1.02, marginBottom: 22 }}>
+            <h1 style={{ fontSize: "clamp(38px, 8vw, 62px)", color: "var(--green)", lineHeight: 1.02, marginBottom: 22 }}>
               English, taught<br />the way it <span style={{ fontStyle: "italic", color: "var(--brass)" }}>sticks.</span>
             </h1>
             <p style={{ fontSize: 19, lineHeight: 1.62, color: "var(--ink)", opacity: .8, maxWidth: 500, marginBottom: 30 }}>
@@ -108,7 +108,7 @@ export function Landing() {
           </div>
           <div>
             <Eyebrow>About the teacher</Eyebrow>
-            <h2 style={{ fontSize: 42, color: "var(--green)", margin: "16px 0 18px", lineHeight: 1.1 }}>Mr. Hady Attia teaches English like it matters — because it does.</h2>
+            <h2 style={{ fontSize: "clamp(28px,5.5vw,42px)", color: "var(--green)", margin: "16px 0 18px", lineHeight: 1.1 }}>Mr. Hady Attia teaches English like it matters — because it does.</h2>
             <p style={{ fontSize: 17, lineHeight: 1.7, color: "var(--ink)", opacity: .82, marginBottom: 16 }}>
               For more than a decade, Mr. Hady has built a reputation across the centre for turning English from a feared subject into a confident one. His lessons are structured but never rigid: the plan changes week to week to match exactly what each group needs next.
             </p>
@@ -131,7 +131,7 @@ export function Landing() {
         <div className="wrap" style={{ padding: "84px 24px" }}>
           <div style={{ textAlign: "center", marginBottom: 50 }}>
             <Eyebrow center light>What students achieve</Eyebrow>
-            <h2 style={{ fontSize: 42, marginTop: 16 }}>Results the whole centre can see</h2>
+            <h2 style={{ fontSize: "clamp(28px,5.5vw,42px)", marginTop: 16 }}>Results the whole centre can see</h2>
           </div>
 
           {/* hero result */}
@@ -169,7 +169,7 @@ export function Landing() {
       <section id="stages" className="wrap" style={{ padding: "84px 24px" }}>
         <div style={{ textAlign: "center", marginBottom: 48 }}>
           <Eyebrow center>Educational stages</Eyebrow>
-          <h2 style={{ fontSize: 42, color: "var(--green)", marginTop: 16 }}>A group for every year</h2>
+          <h2 style={{ fontSize: "clamp(28px,5.5vw,42px)", color: "var(--green)", marginTop: 16 }}>A group for every year</h2>
           <p style={{ fontSize: 16.5, color: "var(--muted)", maxWidth: 560, margin: "14px auto 0", lineHeight: 1.6 }}>Two lessons a week, small groups by school type, and a plan that adapts as the term moves.</p>
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 20 }} className="lp-3">
@@ -193,7 +193,7 @@ export function Landing() {
         <div className="wrap" style={{ padding: "84px 24px" }}>
           <div style={{ textAlign: "center", marginBottom: 48 }}>
             <Eyebrow center>Inside the platform</Eyebrow>
-            <h2 style={{ fontSize: 42, color: "var(--green)", marginTop: 16 }}>Built for how the centre actually runs</h2>
+            <h2 style={{ fontSize: "clamp(28px,5.5vw,42px)", color: "var(--green)", marginTop: 16 }}>Built for how the centre actually runs</h2>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 22 }} className="lp-3">
             {[
@@ -218,7 +218,7 @@ export function Landing() {
       <section className="wrap" style={{ padding: "84px 24px" }}>
         <div style={{ textAlign: "center", marginBottom: 48 }}>
           <Eyebrow center>In their words</Eyebrow>
-          <h2 style={{ fontSize: 42, color: "var(--green)", marginTop: 16 }}>Parents and students on Special 1</h2>
+          <h2 style={{ fontSize: "clamp(28px,5.5vw,42px)", color: "var(--green)", marginTop: 16 }}>Parents and students on Special 1</h2>
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 22 }} className="lp-3">
           {[
@@ -243,7 +243,7 @@ export function Landing() {
         <div className="wrap" style={{ padding: "80px 24px", maxWidth: 820 }}>
           <div style={{ textAlign: "center", marginBottom: 40 }}>
             <Eyebrow center>Questions</Eyebrow>
-            <h2 style={{ fontSize: 40, color: "var(--green)", marginTop: 16 }}>How subscriptions work</h2>
+            <h2 style={{ fontSize: "clamp(28px,5.5vw,40px)", color: "var(--green)", marginTop: 16 }}>How subscriptions work</h2>
           </div>
           {[
             ["How much does it cost?", "Students pay a monthly subscription per group. The exact fee is set at the centre and covers two lessons each week, all homework, recitation sheets and exams."],
@@ -265,11 +265,11 @@ export function Landing() {
 
       {/* CONTACT */}
       <section id="contact" className="wrap" style={{ padding: "84px 24px" }}>
-        <div style={{ background: "var(--green)", borderRadius: 26, padding: "56px 48px", color: "#FBF9F4", position: "relative", overflow: "hidden" }} className="seal-grain">
+        <div className="contact-card seal-grain" style={{ background: "var(--green)", borderRadius: 26, padding: "56px 48px", color: "#FBF9F4", position: "relative", overflow: "hidden" }}>
           <div style={{ display: "grid", gridTemplateColumns: "1.2fr 1fr", gap: 44, alignItems: "center" }} className="lp-2col">
             <div>
               <Eyebrow light>Visit the centre</Eyebrow>
-              <h2 style={{ fontSize: 40, marginTop: 16, marginBottom: 16 }}>Join the next group with Mr. Hady</h2>
+              <h2 style={{ fontSize: "clamp(26px,5vw,40px)", marginTop: 16, marginBottom: 16 }}>Join the next group with Mr. Hady</h2>
               <p style={{ fontSize: 16.5, color: "#C7D6CC", lineHeight: 1.62, marginBottom: 28, maxWidth: 440 }}>
                 Sign in to the portal if you're already a student, or reach the secretary to ask about places, times and monthly fees.
               </p>
@@ -278,27 +278,26 @@ export function Landing() {
                 <Button size="lg" variant="dark" icon={Phone} onClick={() => setContact(true)}>Call the secretary</Button>
               </div>
             </div>
-            <div style={{ display: "grid", gap: 12 }}>
+            <div style={{ display: "grid", gap: 12, minWidth: 0 }}>
               {/* phones — tap to open the call/WhatsApp sheet */}
-              <button onClick={() => setContact(true)} style={{ textAlign: "left", display: "flex", alignItems: "center", gap: 14, background: "rgba(255,255,255,.07)", border: "1px solid rgba(255,255,255,.14)", borderRadius: 14, padding: "14px 16px", cursor: "pointer", color: "#FBF9F4" }}>
+              <button onClick={() => setContact(true)} style={{ textAlign: "left", display: "flex", alignItems: "center", gap: 14, background: "rgba(255,255,255,.07)", border: "1px solid rgba(255,255,255,.14)", borderRadius: 14, padding: "14px 16px", cursor: "pointer", color: "#FBF9F4", flexWrap: "wrap", minWidth: 0 }}>
                 <div style={{ width: 42, height: 42, borderRadius: 11, background: "rgba(228,210,168,.16)", display: "grid", placeItems: "center", flexShrink: 0 }}><Phone size={19} color="#E4D2A8" /></div>
-                <div style={{ flex: 1 }}>
-                  <div style={{ fontSize: 12.5, color: "#9DB3A7" }}>Secretary</div>
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <div style={{ fontSize: 12.5, color: "#9DB3A7" }}>Secretary · tap to call or WhatsApp</div>
                   <div className="mono" style={{ fontWeight: 700, fontSize: 14.5, direction: "ltr" }}>{CENTRE.phones[0].display}</div>
                   <div className="mono" style={{ fontWeight: 700, fontSize: 14.5, direction: "ltr" }}>{CENTRE.phones[1].display}</div>
                 </div>
-                <span style={{ fontSize: 12, color: "#E4D2A8", fontWeight: 700 }}>Call / WhatsApp</span>
               </button>
               {/* address (Arabic, RTL) */}
-              <div style={{ display: "flex", alignItems: "flex-start", gap: 14, background: "rgba(255,255,255,.07)", border: "1px solid rgba(255,255,255,.14)", borderRadius: 14, padding: "14px 16px" }}>
+              <div style={{ display: "flex", alignItems: "flex-start", gap: 14, background: "rgba(255,255,255,.07)", border: "1px solid rgba(255,255,255,.14)", borderRadius: 14, padding: "14px 16px", minWidth: 0 }}>
                 <div style={{ width: 42, height: 42, borderRadius: 11, background: "rgba(228,210,168,.16)", display: "grid", placeItems: "center", flexShrink: 0 }}><MapPin size={19} color="#E4D2A8" /></div>
-                <div style={{ flex: 1 }}>
+                <div style={{ flex: 1, minWidth: 0 }}>
                   <div style={{ fontSize: 12.5, color: "#9DB3A7" }}>Centre address</div>
-                  <div dir="rtl" style={{ fontWeight: 600, fontSize: 14.5, lineHeight: 1.5, textAlign: "right" }}>{CENTRE.addressAr}</div>
+                  <div dir="rtl" style={{ fontWeight: 600, fontSize: 14.5, lineHeight: 1.5, textAlign: "right", wordBreak: "break-word" }}>{CENTRE.addressAr}</div>
                 </div>
               </div>
               {/* working hours */}
-              <div style={{ display: "flex", alignItems: "center", gap: 14, background: "rgba(255,255,255,.07)", border: "1px solid rgba(255,255,255,.14)", borderRadius: 14, padding: "14px 16px" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 14, background: "rgba(255,255,255,.07)", border: "1px solid rgba(255,255,255,.14)", borderRadius: 14, padding: "14px 16px", minWidth: 0 }}>
                 <div style={{ width: 42, height: 42, borderRadius: 11, background: "rgba(228,210,168,.16)", display: "grid", placeItems: "center", flexShrink: 0 }}><Clock size={19} color="#E4D2A8" /></div>
                 <div><div style={{ fontSize: 12.5, color: "#9DB3A7" }}>Working hours</div><div style={{ fontWeight: 700, fontSize: 15 }}>{CENTRE.hours}</div></div>
               </div>
