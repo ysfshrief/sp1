@@ -13,7 +13,7 @@ function DesignerLogo() {
       </div>
     );
   }
-  return <img src="/designer-logo.webp" alt="Joe Industries" onError={() => setErr(true)} style={{ height: 34, width: "auto", objectFit: "contain", flexShrink: 0 }} />;
+  return <img src="/designer-logo.webp" alt="Joe Industries" onError={() => setErr(true)} style={{ height: 32, width: "auto", maxWidth: "100%", objectFit: "contain", flexShrink: 1, minWidth: 0 }} />;
 }
 
 export function Footer() {
@@ -76,10 +76,10 @@ export function Footer() {
         {/* Designer credit band */}
         <div style={{ marginTop: 44, paddingTop: 24, borderTop: "1px solid rgba(255,255,255,.1)", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 18 }}>
           <div style={{ fontSize: 13, color: "#8FA89B" }}>© {new Date().getFullYear()} Special 1 — Hady Attia. All rights reserved.</div>
-          <div style={{ display: "flex", alignItems: "center", gap: 16, background: "rgba(255,255,255,.04)", border: "1px solid rgba(255,255,255,.1)", borderRadius: 14, padding: "10px 18px" }}>
+          <div className="credit-card" style={{ display: "flex", alignItems: "center", gap: 14, background: "rgba(255,255,255,.04)", border: "1px solid rgba(255,255,255,.1)", borderRadius: 14, padding: "10px 16px", maxWidth: "100%", minWidth: 0, flexWrap: "wrap" }}>
             <DesignerLogo />
-            <span style={{ width: 1, height: 34, background: "rgba(255,255,255,.14)" }} />
-            <div style={{ lineHeight: 1.3 }}>
+            <span className="credit-divider" style={{ width: 1, height: 34, background: "rgba(255,255,255,.14)" }} />
+            <div style={{ lineHeight: 1.3, minWidth: 0 }}>
               <div style={{ fontSize: 11, letterSpacing: 1.5, textTransform: "uppercase", color: "#8FA89B" }}>Designed & developed by</div>
               <div style={{ fontFamily: "'Fraunces',serif", fontSize: 18, color: "#FBF9F4", fontWeight: 600 }}>Youssef Shrief</div>
               <div style={{ fontSize: 11.5, color: "#E4D2A8", fontWeight: 600 }}>Web Development</div>
