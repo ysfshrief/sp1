@@ -26,6 +26,7 @@
 
 * { box-sizing: border-box; }
 html, body, #root { margin: 0; padding: 0; }
+html, body { max-width: 100%; overflow-x: hidden; }
 body {
   font-family: "Plus Jakarta Sans", system-ui, sans-serif;
   color: var(--ink);
@@ -130,4 +131,26 @@ select:focus-visible, textarea:focus-visible, [tabindex]:focus-visible {
 @media (min-width: 560px) {
   /* center the contact action sheet as a dialog on larger screens */
   .contact-sheet { border-radius: 22px !important; margin-bottom: 5vh; }
+}
+@media (max-width: 600px) {
+  .contact-card { padding: 32px 20px !important; border-radius: 20px !important; }
+}
+@media (max-width: 420px) {
+  .wrap { padding: 0 14px; }
+  .contact-card { padding: 26px 16px !important; }
+}
+
+/* footer credit card on small screens: stack logo above the name, hide divider */
+@media (max-width: 480px) {
+  .credit-card { flex-direction: column; align-items: flex-start !important; gap: 10px !important; width: 100%; }
+  .credit-divider { display: none !important; }
+}
+
+/* hero collapses to single column on tablet/mobile */
+@media (max-width: 860px) {
+  .hero-grid { grid-template-columns: 1fr !important; gap: 32px !important; padding: 44px 24px 56px !important; }
+}
+/* tame big section headings on small screens */
+@media (max-width: 600px) {
+  .lp-h2 { font-size: 30px !important; }
 }
